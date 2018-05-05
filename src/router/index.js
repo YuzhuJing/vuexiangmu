@@ -57,19 +57,20 @@ export default new Router({
     },
     {
       path:"/home",
-      redirect:Home
+      component:Home
     },
     {
       path:"/memeber",
-      redirect:Member
+      component:Member
     },
     {
       path:"/cart",
-      redirect:Cart
+      component:Cart
     },
     {
       path:"/search",
-      redirect:Search
+      component:Search
     }
-  ]
+  ],
+  linkActiveClass:"mui-active"
 })
