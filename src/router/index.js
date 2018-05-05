@@ -38,7 +38,7 @@ export default new Router({
       component:Newslist
     },
     {
-      path:"/news/detail:id",
+      path:"/news/detail/:id",
       component:Newsdetail
     },
     //图片

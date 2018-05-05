@@ -3,13 +3,13 @@
       <ul class="mui-table-view mui-table-view-chevron">
 
 				<li class="mui-table-view-cell mui-media" v-for="(v,i) in newslist" :key="i">
-					<a class="mui-navigate-right">
+					<router-link :to="'/news/detail/'+v.id" class="mui-navigate-right">
 						<img class="mui-media-object mui-pull-left" :src="v.img_url">
 						<div class="mui-media-body mui-ellipsis">
 							{{v.title}}
 							<p class='mui-ellipsis'>{{v.zhaiyao}}</p>
 						</div>
-					</a>
+					</router-link>
 				</li>
 			</ul>
     </div>
