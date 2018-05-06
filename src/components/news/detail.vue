@@ -14,7 +14,7 @@
             </div>
         </div>
         <div class="news-comment">
-            
+           <comment :id="this.$route.params.id"></comment>
         </div>
     </div>
 </template>
@@ -23,6 +23,7 @@
 
 import axios from "axios";
 import dateformat from "@/filters/dateformat"
+import comment from "../common/comment.vue"
 
 
 export default {
@@ -42,6 +43,9 @@ export default {
   },
   filters:{
     dateformat
+  },
+  components:{
+    comment
   }
 }
 </script>
