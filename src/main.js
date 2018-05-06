@@ -15,7 +15,8 @@ import "./assets/mui/css/mui.css"
 //购物车样式所需
 import "./assets/mui/css/icons-extra.css"
 
-
+import VuePreview from "vue-preview"
+Vue.use(VuePreview)
 /* eslint-disable no-new */
 new Vue({
   el: '#app',

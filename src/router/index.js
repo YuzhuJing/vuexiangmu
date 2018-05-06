@@ -47,7 +47,7 @@ export default new Router({
       component:Picslist
     },
     {
-      path:"/pics/detail",
+      path:"/pics/detail/:id",
       component:Picsdetail
     },
     //tabbar
