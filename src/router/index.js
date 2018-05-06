@@ -43,7 +43,7 @@ export default new Router({
     },
     //图片
     {
-      path:"/pics",
+      path:"/pics/:id",
       component:Picslist
     },
     {
