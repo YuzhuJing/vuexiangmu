@@ -84,9 +84,11 @@ methods:{
             content:this.content,
             user_name:"jyz"
           });
+
           this.content = ""
         }
       });
+      
     }
   }
 }
