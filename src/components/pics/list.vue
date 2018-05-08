@@ -16,7 +16,7 @@
 				</div>
 
 
-        <ul>
+        <ul class="aa">
           <li v-for="(v, i) in picList" :key="i" @click="$router.push('/pics/detail/'+v.id)">
             <img v-lazy="v.img_url" alt="">
 
@@ -84,19 +84,19 @@ export default {
   padding: 10px;
 }
 
-ul li {
+.aa li {
   margin: 10px 0;
   box-shadow: 0 0 15px #999;
   position: relative;
   background-color: #ccc;
 }
 
-ul li img {
+.aa li img {
   width: 100%;
   display: block;
 }
 
-ul li .info {
+.aa li .info {
   position: absolute;
   bottom: 0;
   color: #fff;

@@ -52,7 +52,7 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
   .pic-detail{
     padding-left: 5px;
     padding-right: 5px;

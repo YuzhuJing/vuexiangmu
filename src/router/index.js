@@ -4,6 +4,8 @@ import Router from 'vue-router'
 //引入商品相关的组件
 import Goodslist from '@/components/goods/list'
 import Goodsdetail from '@/components/goods/detail'
+import GoodsDesc from '@/components/goods/desc'
+import GoodsComment from '@/components/goods/comment'
 
 //引入新闻相关的组件
 import Newsdetail from '@/components/news/detail'
@@ -29,8 +31,16 @@ export default new Router({
       component:Goodslist
     },
     {
-      path:"/goods/detail",
+      path:"/goods/detail/:id",
       component:Goodsdetail
+    },
+    {
+      path:"/goods/desc/:id",
+      component:GoodsDesc
+    },
+    {
+      path:"/goods/comment/:id",
+      component:GoodsComment
     },
     //新闻
     {
